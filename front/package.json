@@ -1,0 +1,126 @@
+{
+  "name": "dialonce-test",
+  "version": "0.1.0",
+  "description": "dialonce test front",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>enzyme.config.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "transform": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.(js|jsx)?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server -d --hot --config webpack/webpack.dev.config.js --watch",
+    "analyzer": "rimraf ./dist && cross-env NODE_ENV=production webpack --config webpack/webpack.analyzer.config.js",
+    "build": "rimraf ./dist && cross-env NODE_ENV=production webpack --config webpack/webpack.prod.config.js"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@feathersjs/client": "^4.5.11",
+    "@material-ui/icons": "^3.0.2",
+    "connected-react-router": "^5.0.1",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.19",
+    "prop-types": "^15.6.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.3.12",
+    "rimraf": "^2.7.1",
+    "shortid": "^2.2.16",
+    "socket.io-client": "^2.4.0",
+    "styled-components": "^4.1.1",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
+    "@material-ui/core": "^4.9.9",
+    "autoprefixer": "^9.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^1.0.0",
+    "csslint-loader": "^1.0.0",
+    "eslint": "^5.8.0",
+    "eslint-config-google": "^0.11.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "extract-image-webpack-plugin": "^1.0.8",
+    "favicons-webpack-plugin": "0.0.9",
+    "file-loader": "^2.0.0",
+    "hookrouter": "^1.2.3",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^4.0.0-beta.2",
+    "html-webpack-template": "^6.2.0",
+    "image-webpack-loader": "^4.5.0",
+    "material-ui": "^0.20.2",
+    "mini-css-extract-plugin": "^0.4.4",
+    "moment": "^2.24.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "react-router-auth": "^1.0.1",
+    "react-router-dom": "^5.2.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.7.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-processor-html": "^1.0.0",
+    "stylelint-scss": "^3.3.2",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "svg-url-loader": "^2.3.2",
+    "terser-webpack-plugin": "^1.1.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "webapp-webpack-plugin": "^2.3.1",
+    "webpack": "^4.22.0",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.1.4",
+    "webpack-pwa-manifest": "^3.7.1",
+    "webpackbar": "^2.6.3"
+  }
+}

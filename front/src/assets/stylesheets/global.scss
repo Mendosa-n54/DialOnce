@@ -1,0 +1,146 @@
+/* ---------------------------- */
+/* ---------- GLOBAL ---------- */
+/* ---------------------------- */
+
+/* ---------- HTML balises ---------- */
+ul {
+	padding: 0;
+	list-style: none;
+}
+li {
+	text-decoration: none;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: grey;
+}
+
+
+/* ---------- Class properties ---------- */
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+.italic {
+	font-style: italic;
+}
+.bold {
+	font-weight: bold !important;
+}
+.pointer {
+	cursor: pointer;
+}
+
+
+/* ---------- Class personalized ---------- */
+/* Voir material-ui-theme.config.js (typography) */
+.h1 {
+	padding: 10px 0 !important;
+	font-size: calc(30px + 0.5vw) !important;
+	text-align: center !important;
+}
+.h2 {
+	padding: 10px 0 !important;
+	font-size: calc(20px + 0.3vw) !important;
+	text-align: center !important;
+}
+.h3 {
+	padding: 5px 0 !important;
+	font-size: calc(17px + 0.3vw) !important;
+	text-align: center !important;
+}
+.h4 {
+	padding: 10px 0 !important;
+	font-size: calc(15px + 0.3vw) !important;
+	text-align: center !important;
+}
+.h5 {
+	padding: 5px 0 !important;
+	font-size: calc(13px + 0.3vw) !important;
+	text-align: left !important;
+}
+.h6 {
+	padding: 5px 0 !important;
+	font-size: calc(12px + 0.3vw) !important;
+	text-align: left !important;
+}
+.img {
+	width: 100%;
+}
+.link {
+	color: #f06638;
+}
+.link:hover,
+.link:focus,
+.link:active {
+	color: #f3985d;
+}
+.loader {
+	padding: 30px;
+	text-align: center;
+	font-style: italic;
+}
+.checkbox-label {
+	cursor: pointer;
+}
+
+
+/* ---------- Colors ---------- */
+.error {
+	color: red;
+}
+.colored {
+	color: orange;
+}
+
+
+/* ---------- Structure ---------- */
+.flex {
+	display: flex;
+}
+.flex-1 {
+	flex: 1;
+}
+.flex-2 {
+	flex: 2;
+}
+.flex-3 {
+	flex: 3;
+}
+.flex-4 {
+	flex: 4;
+}
+.flex-5 {
+	flex: 5;
+}
+.blocs-right {
+	max-width: 300px;
+	margin-left: 30px;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	overflow: hidden;
+	overflow-wrap: break-word;
+	text-overflow: ellipsis;
+}
+
+
+/* ---------- Mobile first ---------- */
+.structure-direction-row-xs {
+	@media screen and (min-width: 480px) {
+		display: flex;
+		flex-direction: row;
+	}
+}
+.structure-direction-row-md {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: row;
+	}
+}
