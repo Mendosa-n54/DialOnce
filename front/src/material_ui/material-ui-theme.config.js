@@ -1,6 +1,6 @@
 // Files CSS
-import '../assets/stylesheets/base/normalize.scss'
-import '../assets/stylesheets/global.scss'
+import '../assets/stylesheets/base/normalize.css'
+import '../assets/stylesheets/global.css'
 
 // Material-ui
 // import deepOrange from '@material-ui/core/colors/deepOrange'
